@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="nav">
+      <div class="header">calc</div>
+      <div>
+        <span class="themes">
+          <div class="theme-word">Theme</div>
+          <div class="types-of-themes">
+            <div class="theme-row">
+              <span class="theme-one theme">1</span>
+              <span class="theme-two theme">2</span>
+              <span class="theme-three theme">3</span>
+            </div>
+            <div class="toggle-row">
+              <span class="toggle-one"></span>
+              <span class="toggle-two hide"></span>
+              <span class="toggle-three hide"></span>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+
+    <div class="screen">
+      <input id="display" readonly>
+    </div>
+    <div class="values">
+      <div class="numbers">
+        <div class="row-one rows">
+          <span class="numbers-and-signs" id="seven" onclick="appendDisplay('7')">7</span>
+          <span class="numbers-and-signs" id="eight" onclick="appendDisplay('8')">8</span>
+          <span class="numbers-and-signs" id="nine" onclick="appendDisplay('9')">9</span>
+          <span class="delete">Del</span>
+        </div>
+        <div class="row-two rows">
+          <span class="numbers-and-signs" id="four" onclick="appendDisplay('4')">4</span>
+          <span class="numbers-and-signs" id="five" onclick="appendDisplay('5')">5</span>
+          <span class="numbers-and-signs" id="six" onclick="appendDisplay('6')">6</span>
+          <span class="numbers-and-signs" id="add" onclick="appendDisplay('+')">+</span>
+        </div>
+        <div class="row-three rows">
+          <span class="numbers-and-signs" id="one" onclick="appendDisplay('1')">1</span>
+          <span class="numbers-and-signs" id="two" onclick="appendDisplay('2')">2</span>
+          <span class="numbers-and-signs" id="three" onclick="appendDisplay('3')">3</span>
+          <span class="numbers-and-signs" id="subtract" onclick="appendDisplay('-')">-</span>
+        </div>
+        <div class="row-four rows">
+          <span class="numbers-and-signs" id="decimal" onclick="appendDisplay('.')">.</span>
+          <span class="numbers-and-signs" id="zero" onclick="appendDisplay('0')">0</span>
+          <span class="numbers-and-signs" id="divide" onclick="appendDisplay('/')">/</span>
+          <span class="numbers-and-signs" id="multiply" onclick="appendDisplay('*')">*</span>
+        </div>
+      </div>
+      <div class="reset-equal-btn">
+        <span id="clear" class="btn">reset</span>
+        <span id="equals" class="btn">=</span>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#" target="_blank">Thato</a>.
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

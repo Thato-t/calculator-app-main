@@ -1,0 +1,268 @@
+:root{
+    /* Theme 1 */
+    --very-dark-desaturated-blue-main-background:hsl(222, 26%, 31%);
+    --very-dark-desaturated-blue-toggle-background:hsl(223, 31%, 20%);
+    --very-dark-desaturated-blue-screen-background:hsl(224, 36%, 15%);
+    
+    --desaturated-dark-blue-key-background:hsl(225, 21%, 49%);
+    --desaturated-dark-blue-key-shadow:hsl(224, 28%, 35%);
+    --red-key-background: hsl(6, 63%, 50%);
+    --dark-red-key-shadow: hsl(6, 70%, 34%);
+    --light-grayish-orange-key-background:hsl(30, 25%, 89%);
+    --grayish-orange-key-shadow:hsl(28, 16%, 65%);
+
+    --very-dark-grayish-blue:hsl(221, 14%, 31%);
+    --white:hsl(0, 0%, 100%);
+
+
+
+    /* Theme 2 */
+    --light-gray-main-background:hsl(0, 0%, 90%);
+    --grayish-red-toggle-background:hsl(0, 5%, 81%);
+    --very-light-gray-screen-background:hsl(0, 0%, 93%);
+    
+    --dark-moderate-cyan-key-background:hsl(185, 42%, 37%);
+    --very-dark-cyan-key-shadow:hsl(185, 58%, 25%);
+    --orange-key-background:hsl(25, 98%, 40%);
+    --dark-orange-key-shadow:hsl(25, 99%, 27%);
+    --light-grayish-yellow-key-background:hsl(45, 7%, 89%);
+    --dark-grayish-orange-key-shadow:hsl(35, 11%, 61%);
+
+    --very-dark-grayish-yellow:hsl(60, 10%, 19%);
+    --white:hsl(0, 0%, 100%);
+    
+
+
+    /* Theme 3 */
+    --very-dark-violet-key-background:hsl(268, 75%, 9%);
+    --very-dark-violet-toggle-background:hsl(268, 71%, 12%);
+
+    --dark-violet-key-background:hsl(281, 89%, 26%);
+    --vivid-magenta-key-shadow:hsl(285, 91%, 52%);
+    --pure-cyan-key-background:hsl(176, 100%, 44%);
+    --soft-cyan-key-shadow:hsl(177, 92%, 70%);
+    --very-dark-violet-key-background:hsl(268, 47%, 21%);
+    --dark-magenta-key-shadow:hsl(290, 70%, 36%);
+
+    --light-yellow:hsl(52, 100%, 62%);
+    --very-dark-blue:hsl(198, 20%, 13%);
+    --white:hsl(0, 0%, 100%);
+
+    --fs-numbers:1.5rem;
+
+    --fw-700:700;
+}
+.theme-two{
+    --very-dark-desaturated-blue-main-background:hsl(0, 0%, 90%);
+    --very-dark-desaturated-blue-toggle-background:hsl(0, 5%, 81%);
+    --very-dark-desaturated-blue-screen-background:hsl(0, 0%, 93%);
+    
+    --desaturated-dark-blue-key-background:hsl(185, 42%, 37%);
+    --desaturated-dark-blue-key-shadow:hsl(185, 58%, 25%);
+    --red-key-background: hsl(25, 98%, 40%);
+    --dark-red-key-shadow: hsl(6, 70%, 34%);
+    --light-grayish-orange-key-background:hsl(45, 7%, 89%);
+    --grayish-orange-key-shadow:hsl(28, 16%, 65%);
+
+    --very-dark-grayish-blue:hsl(60, 10%, 19%);
+    --white:hsl(0, 0%, 100%);
+
+}
+.theme-three{
+    --very-dark-desaturated-blue-main-background:hsl(268, 75%, 9%);
+    --very-dark-desaturated-blue-toggle-background:hsl(268, 71%, 12%);
+    
+    --desaturated-dark-blue-key-background:hsl(281, 89%, 26%);
+    --desaturated-dark-blue-key-shadow:hsl(285, 91%, 52%);
+    --red-key-background: hsl(176, 100%, 44%);
+    --dark-red-key-shadow: hsl(177, 92%, 70%);
+    --light-grayish-orange-key-background:hsl(268, 47%, 21%);
+    --grayish-orange-key-shadow:hsl(290, 70%, 36%);
+
+    --very-dark-grayish-blue:hsl(198, 20%, 13%);
+    --white:hsl(0, 0%, 100%);
+}
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    /* outline:1px solid red; */
+}
+body{
+    font-family:Arial, Verdana, Helvetica, sans-serif;
+    background-color: var(--very-dark-desaturated-blue-main-background);
+    color:white;
+}
+.wrapper{
+    width:fit-content;
+    margin-inline:auto;
+    margin-top:90px;
+    padding:10px 20px;
+}
+.nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:10px;
+}
+.header{
+    color:var(--white);
+    font-weight: var(--fw-700);
+    font-size: 1.2rem;
+}
+.themes{
+    display:flex;
+    gap:35px;
+}
+.theme-word{
+    color:var(--white);
+    font-weight: var(--fw-700);
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+.types-of-themes{
+    display: grid;
+    gap:10px;
+}
+.theme-row,.toggle-row{
+    display:flex;
+    gap:20px
+}
+.theme-row{
+    justify-content: space-between;
+    font-weight: var(--fw-700);
+}
+.theme{
+    cursor:pointer;
+}
+.toggle-row{
+    padding:3px 5px;
+    border-radius:20px;
+    background-color: var(--very-dark-desaturated-blue-toggle-background);
+}
+.toggle-one,
+.toggle-two,
+.toggle-three{
+    display: flex;
+    height:15px;
+    width:15px;
+    border-radius:50%;
+}
+.toggle-one{
+    background-color: var(--red-key-background);
+}
+.toggle-two{
+    background-color: var(--orange-key-background);
+}
+.toggle-three{
+    background-color:var(--pure-cyan-key-background)
+}
+#display{
+    width:100%;
+    height: 80px;
+    outline: none;
+    border:none;
+    border-radius:5px;
+    color:var(--white);
+    background-color: var(--very-dark-desaturated-blue-screen-background);
+    caret-color:var(--white);
+    font-size: var(--fs-numbers);
+    font-weight: var(--fw-700);
+    padding:10px 20px;
+}
+.values{
+    background-color:var(--very-dark-desaturated-blue-toggle-background) ;
+    border-radius:5px;
+    padding:20px;
+    margin-top:20px
+}
+.rows{
+    margin-block:15px;
+    display: flex;
+    justify-content: space-between;
+}
+.numbers-and-signs,
+.delete,.btn{
+    color:var(--very-dark-grayish-blue);
+    background-color: var(--light-gray-main-background);
+    font-weight: var(--fw-700);
+    padding:20px 30px;
+    width:18%;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs-numbers);
+    border-radius:5px;
+    cursor: pointer;
+    transition: 100ms;
+    box-shadow:0px 4px 0px var(--grayish-orange-key-shadow);
+}
+.delete, 
+#clear,
+#equals{
+    color:var(--white);
+    background-color: var(--desaturated-dark-blue-key-background);
+    text-transform: uppercase;
+    box-shadow:0px 4px 0px var(--desaturated-dark-blue-key-shadow);
+}
+.reset-equal-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    width:48%;
+    height:40px;
+}
+#equals{
+    background-color: var(--red-key-background);
+    box-shadow: 0px 4px 0px var(--dark-red-key-shadow);
+}
+.numbers-and-signs:hover{
+    background-color:hsl(30, 25%, 93%);
+}
+.numbers-and-signs:active{
+    background-color:hsl(30, 25%, 99%);
+}
+.delete:hover,
+#clear:hover{
+    background-color: hsl(225, 21%, 59%);
+}
+.delete:active,
+#clear:active{
+    background-color: hsl(225, 21%, 61%);
+}
+#equals:hover{
+    background-color:hsl(6, 63%, 55%);
+}
+#equals:active{
+    background-color:hsl(6, 63%, 60%);
+}
+
+.hide{
+    visibility:hidden
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top:20px;
+}
+.attribution a {
+  color: var(--red-key-background);
+  text-decoration: none;
+  font-weight: var(--fw-700);
+  transition: 200ms;
+  text-shadow: 0px 4px 0px var(--dark-red-key-shadow);
+}
+.attribution a:hover {
+    color:hsl(6, 63%, 55%);
+}
+.attribution a:active {
+    color:hsl(6, 63%, 60%);
+}
+
